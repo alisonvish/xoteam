@@ -1,2 +1,4 @@
 # xoteam
-xoteam with what?
+
+
+используя библиотеку os и модуль shutil 
