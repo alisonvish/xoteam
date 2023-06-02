@@ -9,3 +9,6 @@ def folders_sort(folder_path):
         new_folder_path = os.path.join(folder_path, str(i) + '_new')
         os.makedirs(new_folder_path)
         new_folders.append(new_folder_path)
+    for subfolder in subfolders:
+        files = os.listdir(subfolder)
+        files.sort()
