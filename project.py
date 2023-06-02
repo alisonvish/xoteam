@@ -12,9 +12,9 @@ def folders_sort(folder_path):
     for subfolder in subfolders:
         files = os.listdir(subfolder)
         files.sort()
-for i, file in enumerate(files):
+        for i, file in enumerate(files):
             file_path = os.path.join(subfolder, file)
             new_file_name = os.path.basename(subfolder) + '_' + file
             new_file_path = os.path.join(new_folders[i], new_file_name)
-            shutil.copy2(file_path, new_file_path) #копируем содержимое файла в новый файл)
+            shutil.copy2(file_path, new_file_path) 
         shutil.rmtree(subfolder)
