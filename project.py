@@ -18,3 +18,8 @@ def folders_sort(folder_path):
             new_file_path = os.path.join(new_folders[i], new_file_name)
             shutil.copy2(file_path, new_file_path) 
         shutil.rmtree(subfolder)
+        
+arr = ['А', 'Б', 'В', 'Г']
+
+for it in arr:
+    folders_sort(it)
